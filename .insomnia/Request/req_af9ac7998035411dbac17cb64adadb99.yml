@@ -1,0 +1,44 @@
+_id: req_af9ac7998035411dbac17cb64adadb99
+type: Request
+parentId: wrk_391b8028a0de41a5be22178885dae724
+modified: 1641748934778
+created: 1641743421381
+url: http://swea.riksbank.se/sweaWS/services/SweaWebServiceHttpSoap12Endpoint
+name: getDays
+description: ""
+method: POST
+body:
+  mimeType: application/xml
+  text: >-
+    <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:xsd="http://swea.riksbank.se/xsd">
+    	<soap:Header/>
+    	<soap:Body>
+    		<xsd:getCalendarDays>
+    			<datefrom>2011-10-01</datefrom>
+    			<dateto>2021-10-01</dateto>
+    		</xsd:getCalendarDays>
+    	</soap:Body>
+    </soap:Envelope>
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/soap+xml
+    id: pair_7556acb783854b7b89d486941c4596e5
+  - id: pair_6658b2c4347e475ab3261b2d6d0e47bf
+    name: charset
+    value: utf-8
+    description: ""
+  - id: pair_c1ef31c0faff450fa536f29bf87ac86a
+    name: action
+    value: urn:getCalendarDays
+    description: ""
+authentication: {}
+metaSortKey: -1641743421381
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
