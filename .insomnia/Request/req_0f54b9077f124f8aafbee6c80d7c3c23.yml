@@ -1,10 +1,10 @@
-_id: req_af9ac7998035411dbac17cb64adadb99
+_id: req_0f54b9077f124f8aafbee6c80d7c3c23
 type: Request
 parentId: wrk_391b8028a0de41a5be22178885dae724
-modified: 1642608704255
-created: 1641743421381
+modified: 1642608609504
+created: 1642605626128
 url: http://swea.riksbank.se/sweaWS/services/SweaWebServiceHttpSoap12Endpoint
-name: getCalendarDays
+name: getMonthlyAverageExchangeRates
 description: ""
 method: POST
 body:
@@ -31,10 +31,10 @@ headers:
     description: ""
   - id: pair_c1ef31c0faff450fa536f29bf87ac86a
     name: action
-    value: urn:{% request 'name', '', 0 %}
+    value: urn:getCalendarDays
     description: ""
 authentication: {}
-metaSortKey: -1641743421381
+metaSortKey: -1641743421356
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

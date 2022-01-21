@@ -1,10 +1,10 @@
-_id: req_af9ac7998035411dbac17cb64adadb99
+_id: req_ab030c9292f54ab3a6bb0e84a17afbcb
 type: Request
 parentId: wrk_391b8028a0de41a5be22178885dae724
-modified: 1642608704255
-created: 1641743421381
+modified: 1642607309512
+created: 1642605841946
 url: http://swea.riksbank.se/sweaWS/services/SweaWebServiceHttpSoap12Endpoint
-name: getCalendarDays
+name: getInterestAndExchangeNames
 description: ""
 method: POST
 body:
@@ -14,10 +14,10 @@ body:
     xmlns:xsd="http://swea.riksbank.se/xsd">
     	<soap:Header/>
     	<soap:Body>
-    		<xsd:getCalendarDays>
-    			<datefrom>2011-10-01</datefrom>
-    			<dateto>2021-10-01</dateto>
-    		</xsd:getCalendarDays>
+    		<xsd:getInterestAndExchangeNames>
+    			<groupid>5</groupid>
+    			<languageid>sv</languageid>
+    		</xsd:getInterestAndExchangeNames>
     	</soap:Body>
     </soap:Envelope>
 parameters: []
@@ -29,12 +29,12 @@ headers:
     name: charset
     value: utf-8
     description: ""
-  - id: pair_c1ef31c0faff450fa536f29bf87ac86a
+  - id: pair_53d66ee1d9a546b5b11aee83bf082d94
     name: action
     value: urn:{% request 'name', '', 0 %}
     description: ""
 authentication: {}
-metaSortKey: -1641743421381
+metaSortKey: -1641743421368.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
