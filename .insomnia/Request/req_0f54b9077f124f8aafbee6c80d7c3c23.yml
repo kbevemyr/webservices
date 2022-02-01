@@ -1,7 +1,7 @@
 _id: req_0f54b9077f124f8aafbee6c80d7c3c23
 type: Request
-parentId: wrk_391b8028a0de41a5be22178885dae724
-modified: 1642608609504
+parentId: fld_998b1138e7f84425b6ccfdcb83aa7df1
+modified: 1643714699791
 created: 1642605626128
 url: http://swea.riksbank.se/sweaWS/services/SweaWebServiceHttpSoap12Endpoint
 name: getMonthlyAverageExchangeRates
@@ -14,10 +14,11 @@ body:
     xmlns:xsd="http://swea.riksbank.se/xsd">
     	<soap:Header/>
     	<soap:Body>
-    		<xsd:getCalendarDays>
-    			<datefrom>2011-10-01</datefrom>
-    			<dateto>2021-10-01</dateto>
-    		</xsd:getCalendarDays>
+    		<xsd:getMonthlyAverageExchangeRates>
+    			<year>2011</year>
+    			<month>3</month>
+    			<languageid>en</languageid>
+    		</xsd:getMonthlyAverageExchangeRates>
     	</soap:Body>
     </soap:Envelope>
 parameters: []
@@ -34,7 +35,7 @@ headers:
     value: urn:getCalendarDays
     description: ""
 authentication: {}
-metaSortKey: -1641743421356
+metaSortKey: -1642729039069
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

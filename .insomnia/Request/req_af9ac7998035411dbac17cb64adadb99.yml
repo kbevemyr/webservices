@@ -1,22 +1,23 @@
 _id: req_af9ac7998035411dbac17cb64adadb99
 type: Request
 parentId: wrk_391b8028a0de41a5be22178885dae724
-modified: 1642608704255
+modified: 1643714639111
 created: 1641743421381
 url: http://swea.riksbank.se/sweaWS/services/SweaWebServiceHttpSoap12Endpoint
 name: getCalendarDays
-description: ""
+description: Här skriver jag lite om mitt anrop
 method: POST
 body:
   mimeType: application/xml
-  text: >-
-    <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-    xmlns:xsd="http://swea.riksbank.se/xsd">
+  text: |-
+    <soap:Envelope
+    	xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    	xmlns:xsd="http://swea.riksbank.se/xsd">
     	<soap:Header/>
     	<soap:Body>
     		<xsd:getCalendarDays>
-    			<datefrom>2011-10-01</datefrom>
-    			<dateto>2021-10-01</dateto>
+    			<datefrom>{{ _.first_day }}</datefrom>
+    			<dateto>{{ _.second_day }}</dateto>
     		</xsd:getCalendarDays>
     	</soap:Body>
     </soap:Envelope>

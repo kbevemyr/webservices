@@ -1,11 +1,11 @@
 _id: req_9b658b84269040e2ac1117ac68500599
 type: Request
 parentId: wrk_391b8028a0de41a5be22178885dae724
-modified: 1642608607424
+modified: 1643714249750
 created: 1641746574951
 url: http://swea.riksbank.se/sweaWS/services/SweaWebServiceHttpSoap12Endpoint
 name: getDaysNEXT
-description: This is a follower to getCaslenderDays
+description: This is a follower to getCalenderDays
 method: POST
 body:
   mimeType: application/xml
@@ -15,8 +15,8 @@ body:
     	<soap:Header/>
     	<soap:Body>
     		<xsd:getCalendarDays>
-    			<datefrom>2020-10-01</datefrom>
-    			<dateto>2021-10-01</dateto>
+    			<datefrom>{% response 'body', 'req_af9ac7998035411dbac17cb64adadb99', 'b64::Ly9yZXR1cm5bbGFzdCgpXS9jYWxkYXRl::46b', 'never', 60 %}</datefrom>
+    			<dateto>{% response 'body', 'req_af9ac7998035411dbac17cb64adadb99', _.second_day, 'no-history', 60 %}</dateto>
     		</xsd:getCalendarDays>
     	</soap:Body>
     </soap:Envelope>
@@ -34,7 +34,7 @@ headers:
     value: urn:getCalendarDays
     description: ""
 authentication: {}
-metaSortKey: -1641743421331
+metaSortKey: -1641743421377.875
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

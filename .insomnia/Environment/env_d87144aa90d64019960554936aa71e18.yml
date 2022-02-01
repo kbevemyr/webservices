@@ -1,0 +1,16 @@
+_id: env_d87144aa90d64019960554936aa71e18
+type: Environment
+parentId: env_5ca9a248e6cd56dbf698475629edbc38d13dca2c
+modified: 1643714381225
+created: 1643652661238
+name: The Environment
+data:
+  first_day: 2021-10-01
+  second_day: //return[last()]/caldate
+dataPropertyOrder:
+  "&":
+    - first_day
+    - second_day
+color: null
+isPrivate: false
+metaSortKey: 1643652661238

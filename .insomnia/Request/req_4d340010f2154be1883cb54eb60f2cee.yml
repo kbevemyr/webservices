@@ -1,10 +1,10 @@
-_id: req_ab030c9292f54ab3a6bb0e84a17afbcb
+_id: req_4d340010f2154be1883cb54eb60f2cee
 type: Request
 parentId: fld_998b1138e7f84425b6ccfdcb83aa7df1
-modified: 1643714695076
-created: 1642605841946
+modified: 1643714674468
+created: 1642968954466
 url: http://swea.riksbank.se/sweaWS/services/SweaWebServiceHttpSoap12Endpoint
-name: getInterestAndExchangeNames
+name: getAllCrossNames
 description: ""
 method: POST
 body:
@@ -14,10 +14,9 @@ body:
     xmlns:xsd="http://swea.riksbank.se/xsd">
     	<soap:Header/>
     	<soap:Body>
-    		<xsd:getInterestAndExchangeNames>
-    			<groupid>5</groupid>
+    		<xsd:getAllCrossNames>
     			<languageid>sv</languageid>
-    		</xsd:getInterestAndExchangeNames>
+    		</xsd:getAllCrossNames>
     	</soap:Body>
     </soap:Envelope>
 parameters: []
@@ -29,12 +28,12 @@ headers:
     name: charset
     value: utf-8
     description: ""
-  - id: pair_53d66ee1d9a546b5b11aee83bf082d94
+  - id: pair_c1ef31c0faff450fa536f29bf87ac86a
     name: action
     value: urn:{% request 'name', '', 0 %}
     description: ""
 authentication: {}
-metaSortKey: -1642729039019
+metaSortKey: -1642729038919
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
